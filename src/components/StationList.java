@@ -9,14 +9,14 @@ import java.util.LinkedList;
 
 /** Classe permettant d'utiliser une 
 liste avec les stations de metro */
-public class StationList extends JList<Station> {
+public class StationList extends JList {
 
-    private DefaultListModel<Station> listModel;
-    private LinkedList<Station> stations;
+    private DefaultListModel listModel;
+    private LinkedList stations;
 
     /** Contructeur sans argument */
     public StationList() {
-        listModel = new DefaultListModel<Station>();
+        listModel = new DefaultListModel();
         try {
             DBConnection con = new DBConnection();
             stations = con.getMetroStations();
