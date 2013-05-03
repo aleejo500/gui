@@ -40,7 +40,7 @@ public class SearchStationListener extends KeyAdapter {
      *
      * @param search La JComboBox à utiliser pour donner des suggestions
      */
-    public SearchStationListener(JComboBox<String> search) {
+    public SearchStationListener(JComboBox search) {
         this.search = search;
         try {
             connection = new DBConnection();
@@ -75,8 +75,8 @@ public class SearchStationListener extends KeyAdapter {
      * @param srch La recherche entrée par l'utilisateur
      * @return Un ComboBoxModel contenant les stations retenues
      */
-    private ComboBoxModel<String> filterStations(String srch) {
-        DefaultComboBoxModel<String> model;
+    private ComboBoxModel filterStations(String srch) {
+        DefaultComboBoxModel model;
         model = DefaultComboBoxModel.class.cast(search.getModel());
 
         model.removeAllElements();

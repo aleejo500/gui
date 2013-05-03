@@ -21,7 +21,7 @@ public class DBConnection {
             throws ClassNotFoundException, SQLException, Exception {
         Class.forName("org.postgresql.Driver");
         con = DriverManager.getConnection(
-                "jdbc:postgresql://localhost:5432/RATP", "amidouch", "izan2112!");
+                "jdbc:postgresql://localhost:5433/ratp", "glav", "123");
     }
 
     public void FCLOSEconecta() throws ClassNotFoundException, SQLException {

@@ -28,7 +28,7 @@ public class Recherche extends JPanel implements ItemListener {
         /* Creation de la combo box */
         JPanel comboBoxPane = new JPanel();
         String[] cbitems = {TEXTUELLE, LIGNE, APPROX};
-        JComboBox<String> cb = new JComboBox<String>(cbitems);
+        JComboBox cb = new JComboBox(cbitems);
         cb.setEditable(false);
         cb.addItemListener(this);
         comboBoxPane.add(cb);

@@ -19,7 +19,7 @@ public class RechercheText extends JPanel {
     /** Bouton qui lance la recherche. */
     JButton searchButton;
     /** Le champ de texte dans lequel sera entré la recherche. */
-    JComboBox<String> searchField;
+    JComboBox searchField;
 
     /** Constructeur sans argument */
     public RechercheText() {
@@ -34,7 +34,7 @@ public class RechercheText extends JPanel {
         /* Création des composants */
         searchButton = new JButton(button.getString("textSearchButton"));
         searchButton.addActionListener(new RechercheListener());
-        searchField = new JComboBox<String>(new DefaultComboBoxModel<String>());
+        searchField = new JComboBox(new DefaultComboBoxModel());
         searchField.setPreferredSize(new Dimension(350, 20));
         searchField.setEditable(true);
         searchField.getEditor().getEditorComponent()

@@ -35,13 +35,13 @@ public class Itineraire extends JPanel {
                 new JButton(button.getString("itinerarySearchButton"));
         itineraireButton.addActionListener(new ItineraireListener());
 
-        departField = new JComboBox<String>();
+        departField = new JComboBox();
         departField.setPreferredSize(new Dimension(LARG, HAUT));
         departField.setEditable(true);
         departField.getEditor().getEditorComponent()
                 .addKeyListener(new SearchStationListener(departField));
         
-        arriveeField = new JComboBox<String>();
+        arriveeField = new JComboBox();
         arriveeField.setPreferredSize(new Dimension(LARG, HAUT));
         arriveeField.setEditable(true);
         arriveeField.getEditor().getEditorComponent()
